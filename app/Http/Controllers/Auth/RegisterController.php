@@ -93,7 +93,7 @@ class RegisterController extends Controller
         if (Session::has('bus_checkout_info')) {
             return route('payment');
         }else{
-            return redirect()->route('profile');
+            return route('profile');
         }
     }
 }

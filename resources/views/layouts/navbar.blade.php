@@ -13,9 +13,9 @@
                         <li class="nav-item">
                             <a href="{{ url('/')}}" class="nav-link" >Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{ url('/book-ticket')}}" class="nav-link" >Book ticket</a>
-                        </li>
+{{--                        <li class="nav-item">--}}
+{{--                            <a href="{{ url('/book-ticket')}}" class="nav-link" >Book ticket</a>--}}
+{{--                        </li>--}}
                         <li class="nav-item">
                             <a href="{{ url('/contact')}}" class="nav-link" >Contact us</a>
                         </li>
@@ -27,11 +27,15 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item mr-2">
-                                <a class="nav-link active text-white" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <button class="border-0 mt-1"> <a class="nav-link active text-white" href="{{ route('login') }}">
+                                        {{ __('Login') }}</a>
+                                </button>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link active text-white" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                   <button class="border-0 mt-1"> <a class="nav-link active text-white" href="{{ route('register') }}">
+                                           {{ __('Register') }}</a>
+                                   </button>
                                 </li>
                             @endif
                         @else

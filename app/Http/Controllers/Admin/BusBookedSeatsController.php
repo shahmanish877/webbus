@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class BusBookedSeatsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['auth','verified']);
+    }
+
     public function report(Request $request)
     {
         $bus_report = BusBookedSeats::where('bus_id','=',$request['bus_id'])->get();

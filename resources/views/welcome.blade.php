@@ -14,7 +14,7 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('/assets/images/banner2.jpg') }}" width="1200" height="550">
+                <img src="{{ asset('/assets/images/banner2.jpg') }}" width="1000" height="320">
             </div>
 
 

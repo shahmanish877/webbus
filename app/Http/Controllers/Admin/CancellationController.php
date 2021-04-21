@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\DB;
 
 class CancellationController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['auth','verified']);
+    }
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -38,63 +45,76 @@ class CancellationController extends Controller
      */
     public function show($cancellation)
     {
+
         $cancellation = Cancellation::findOrFail($cancellation);
-        return view('admin.cancellation.show',compact('cancellation'));
+
+        if(Auth::id()==$cancellation->user_id)
+            return view('admin.cancellation.show',compact('cancellation'));
+        else
+            abort(404);
+
     }
 
     public function accept($cancellation)
     {
         $cancellation = Cancellation::findOrFail($cancellation);
 
-        $user_ticket = UserBookedSeats::findOrFail($cancellation->report_id);
-        $user_ticket->status = "Cancelled";
+        if(Auth::id()==$cancellation->user_id) {
 
-       //dd($user_ticket['seats_num']);
-        $booked_bus = BusBookedSeats::where([
-            'booked_date'=> $user_ticket->bus_id,
-            'booked_date' => $user_ticket['booked_date'],
-        ])->first();
-        //dd($booked_bus['booked_seats_num']);
-        $bus_booked_seats_num = explode(', ', $booked_bus['booked_seats_num']);
-        $user_booked_seats_num = explode(', ', $user_ticket['seats_num']);
+            $user_ticket = UserBookedSeats::findOrFail($cancellation->report_id);
+            $user_ticket->status = "Cancelled";
 
-        $updated_bus_seat_num = array_diff($bus_booked_seats_num, $user_booked_seats_num);
-        //print_r($updated_bus_seat_num);
+            //dd($user_ticket['seats_num']);
+            $booked_bus = BusBookedSeats::where([
+                'booked_date' => $user_ticket->bus_id,
+                'booked_date' => $user_ticket['booked_date'],
+            ])->first();
+            //dd($booked_bus['booked_seats_num']);
+            $bus_booked_seats_num = explode(', ', $booked_bus['booked_seats_num']);
+            $user_booked_seats_num = explode(', ', $user_ticket['seats_num']);
 
-        $bus_booked_seats_id = explode(', ', $booked_bus['booked_seats_id']);
-        $user_booked_seats_id = explode(', ', $user_ticket['seats_id']);
+            $updated_bus_seat_num = array_diff($bus_booked_seats_num, $user_booked_seats_num);
+            //print_r($updated_bus_seat_num);
 
-        $updated_bus_seat_id=array_diff($bus_booked_seats_id, $user_booked_seats_id);
-        //print_r($updated_bus_seat_id);
+            $bus_booked_seats_id = explode(', ', $booked_bus['booked_seats_id']);
+            $user_booked_seats_id = explode(', ', $user_ticket['seats_id']);
 
-
-        $booked_bus->booked_seats_num = implode(', ', $updated_bus_seat_num);
-        $booked_bus->booked_seats_id = implode(', ', $updated_bus_seat_id);
+            $updated_bus_seat_id = array_diff($bus_booked_seats_id, $user_booked_seats_id);
+            //print_r($updated_bus_seat_id);
 
 
+            $booked_bus->booked_seats_num = implode(', ', $updated_bus_seat_num);
+            $booked_bus->booked_seats_id = implode(', ', $updated_bus_seat_id);
 
-        //dd($booked_bus['booked_seats_num']);
 
-        if($booked_bus['booked_seats_num']==null){
-            $booked_bus->delete();
+            //dd($booked_bus['booked_seats_num']);
+
+            if ($booked_bus['booked_seats_num'] == null) {
+                $booked_bus->delete();
+            } else {
+                $booked_bus->update();
+            }
+            $user_ticket->update();
+
+
+            return redirect('admin/cancellation');
         }else{
-            $booked_bus->update();
+            abort(404);
         }
-        $user_ticket->update();
-
-        return redirect('admin/cancellation');
     }
 
     public function reject($cancellation)
     {
         $cancellation = Cancellation::findOrFail($cancellation);
+        if(Auth::id()==$cancellation->user_id) {
+            $user_ticket = UserBookedSeats::findOrFail($cancellation->report_id);
+            $user_ticket->status = "Active/Cancellation Rejected";
+            $user_ticket->update();
 
-        $user_ticket = UserBookedSeats::findOrFail($cancellation->report_id);
-        $user_ticket->status = "Active/Cancellation Rejected";
-        $user_ticket->update();
-
-        return redirect('admin/cancellation');
-
+            return redirect('admin/cancellation');
+        }else{
+            abort(404);
+        }
 
     }
 
