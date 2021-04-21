@@ -89,7 +89,6 @@ class UserBookedSeatsController extends Controller
         $bus_admin = User::findorFail($cancelled_bus->user_id) ;
         //dd($bus_admin->name);
         $bus_admin->notify(new CancellationRequest($cancel_request));
-dd('s');
         return redirect('profile/report/'.Crypt::encrypt($user_ticket->id))->with('success_msg','Seat cancellation request submitted.');
 
     }
