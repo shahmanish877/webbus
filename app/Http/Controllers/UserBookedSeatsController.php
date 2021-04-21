@@ -2,17 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Bus;
 use App\BusBookedSeats;
 use App\Cancellation;
+use App\Notifications\CancellationRequest;
+use App\User;
 use App\UserBookedSeats;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Http\Request;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
 
 class UserBookedSeatsController extends Controller
 {
+
+    use Notifiable;
+
     public function all_report(){
         if(Auth::check()) {
 
@@ -77,6 +84,12 @@ class UserBookedSeatsController extends Controller
         $user_ticket->update();
         $cancel_request->save();
 
+        //dd($cancel_request->bus_id);
+        $cancelled_bus = Bus::findorFail($cancel_request->bus_id);
+        $bus_admin = User::findorFail($cancelled_bus->user_id) ;
+        //dd($bus_admin->name);
+        $bus_admin->notify(new CancellationRequest($cancel_request));
+dd('s');
         return redirect('profile/report/'.Crypt::encrypt($user_ticket->id))->with('success_msg','Seat cancellation request submitted.');
 
     }
