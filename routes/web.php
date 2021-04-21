@@ -19,11 +19,6 @@ Route::get('/', function () {
 
 });
 
-Route::any('{query}',
-    function() { return redirect('/'); })
-    ->where('query', '.*');
-
-
 // Route::get('/new-login', function () {
 //     return view('auth.new-login');
 
@@ -139,3 +134,10 @@ Route::get('/check-session', function () {
 Route::get('/profile/reports','UserBookedSeatsController@all_report')->name('user.all_report');
 Route::get('/profile/report/{id}','UserBookedSeatsController@report')->name('user.report');
 Route::post('/profile/report/cancel','UserBookedSeatsController@reportCancel')->name('user.report.cancel');
+
+
+
+Route::any('{query}',
+    function() { return redirect('/'); })
+    ->where('query', '.*');
+
