@@ -1,0 +1,367 @@
+[33mcommit a9129f93e10760e6ce86d1e59338f3f6d8f4ee55[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Apr 25 20:57:45 2021 +0545
+
+    Back link added in login page
+
+[33mcommit 9d83411da01e68ca988bb8f5312e7d42feb0852e[m[33m ([m[1;31mheroku/master[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Wed Apr 21 18:53:52 2021 +0545
+
+    wrong url to homepage
+
+[33mcommit 7185af3abc285976f08d20d7206ef693b3c0afd1[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Wed Apr 21 18:52:18 2021 +0545
+
+    update
+
+[33mcommit 940cb854775d7912ee3a910953e9928d8d414760[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Wed Apr 21 18:37:44 2021 +0545
+
+    update
+
+[33mcommit 95d36776f91b4a2c526469864de908433a5d3def[m
+Merge: d27b22a 2fa4b7f
+Author: Manish Shah <66003695+shahmanish877@users.noreply.github.com>
+Date:   Wed Apr 21 18:36:39 2021 +0545
+
+    Merge pull request #11 from shahmanish877/Cancellation_Notification_added
+    
+    Cancellation notified to admin
+
+[33mcommit 2fa4b7f43c35c7a9664275bfc6953cd7563e21a6[m[33m ([m[1;31morigin/Cancellation_Notification_added[m[33m, [m[1;32mCancellation_Notification_added[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Wed Apr 21 18:36:07 2021 +0545
+
+    Cancellation notified to admin
+
+[33mcommit d27b22adbad3b6edf47f94136127d4839c43cfb3[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Wed Apr 21 14:35:56 2021 +0545
+
+    Updated
+
+[33mcommit 5292ee4a7e51453835667af965366a75e00102d2[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Tue Apr 20 20:05:50 2021 +0545
+
+    Cancellation optimized
+
+[33mcommit 655708bcb6119b1c41a18ab78b0c835b55881012[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Tue Apr 20 19:57:51 2021 +0545
+
+    Bus seeder added
+
+[33mcommit c49726f05a802166d7ad75a7a4c625f4565cfccc[m
+Merge: 1a4ade9 abf0e5b
+Author: Manish Shah <66003695+shahmanish877@users.noreply.github.com>
+Date:   Tue Apr 20 19:40:20 2021 +0545
+
+    Merge pull request #10 from shahmanish877/Cancellation_Added
+    
+    Cancellation function added
+
+[33mcommit abf0e5b651c2fa3c0ddf83dfc9a1d5690fd9646a[m[33m ([m[1;31morigin/Cancellation_Added[m[33m, [m[1;32mCancellation_Added[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Tue Apr 20 19:39:27 2021 +0545
+
+    Cancellation function added
+
+[33mcommit 1a4ade9d5c955f882073f19a4adf5d64e4f1c9c6[m[33m ([m[1;32mhelp[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sat Apr 17 19:35:33 2021 +0545
+
+    Added modal in refund
+
+[33mcommit 5d6f1fb89b6115ad5f187742d11866b120ad265b[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sat Apr 17 19:31:44 2021 +0545
+
+    updated
+
+[33mcommit fab888206aa1561551cb36b9f1f738e4b091e180[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sat Apr 17 19:16:53 2021 +0545
+
+    updated
+
+[33mcommit 9309b4f1cc8e8b47e205b2dbb2be7b7351a3192f[m
+Merge: 6bbc157 e0b51c1
+Author: Manish Shah <66003695+shahmanish877@users.noreply.github.com>
+Date:   Sat Apr 17 19:12:58 2021 +0545
+
+    Merge pull request #9 from shahmanish877/Payment_and_Report_added
+    
+    Payment & reports added
+
+[33mcommit e0b51c1074c6c8788828220ac61943f380a0fbb1[m[33m ([m[1;31morigin/Payment_and_Report_added[m[33m, [m[1;32mPayment_and_Report_added[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sat Apr 17 19:12:13 2021 +0545
+
+    Payment & reports added
+
+[33mcommit 6bbc1578dfdb6e43b1a52bdbbe89454ffa9648e2[m[33m ([m[1;32mPayment[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Apr 9 20:29:01 2021 +0545
+
+    Bus update with off day fixed
+
+[33mcommit 5015bdbb6c4b0dd6f75bbbf67e987d5334c67587[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Apr 9 20:25:33 2021 +0545
+
+    Bus update with off day fixed
+
+[33mcommit 0092c684c117fd36ab58490c576712ea6c8a7dcf[m
+Merge: db4a101 c5dbf0b
+Author: Manish Shah <66003695+shahmanish877@users.noreply.github.com>
+Date:   Fri Apr 9 20:17:51 2021 +0545
+
+    Merge pull request #8 from shahmanish877/payment_created
+    
+    Payment page created and available if user is logged in
+
+[33mcommit c5dbf0b78b223014cd44c092a22498bc59a08827[m[33m ([m[1;31morigin/payment_created[m[33m, [m[1;32mpayment_created[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Apr 9 20:16:58 2021 +0545
+
+    Payment page created and available if user is logged in
+
+[33mcommit db4a1010707aa9a69cf7fae837db2f382857af29[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sat Apr 3 16:32:40 2021 +0545
+
+    Seat layout updated & bus linked
+
+[33mcommit d4c027f94300f5013e069b42d3f8030dd88c3134[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Apr 2 17:42:47 2021 +0545
+
+    available bus update
+
+[33mcommit 83af8d6081ef6e227490de72bc5c9a52935f832d[m
+Merge: 6c759fd e31d9e7
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Apr 2 17:39:24 2021 +0545
+
+    update
+
+[33mcommit 6c759fd3291fc267c54fa5f198b7188af677d799[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Apr 2 17:37:14 2021 +0545
+
+    available bus update
+
+[33mcommit e31d9e723b3bb545132e216fbcd7dd3534b6ef66[m
+Merge: ab3e6f1 31cca6c
+Author: Manish Shah <66003695+shahmanish877@users.noreply.github.com>
+Date:   Fri Apr 2 17:28:05 2021 +0545
+
+    Merge pull request #6 from shahmanish877/seat_layout_added
+    
+    Seat layout added in search page
+
+[33mcommit 31cca6cb2532409ddbcaa044f5da545bab7faa28[m[33m ([m[1;31morigin/seat_layout_added[m[33m, [m[1;32mseat_layout_added[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Apr 2 17:25:53 2021 +0545
+
+    Seat layout added in search page
+
+[33mcommit ab3e6f109223d78915a44d849654f8e996c1de5d[m
+Merge: d466358 b4a7f3b
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Mar 21 20:26:46 2021 +0545
+
+    Merge branch 'select2_added'
+
+[33mcommit b4a7f3b24570d351c865c71edec4cc8e4f8e871d[m[33m ([m[1;31morigin/select2_added[m[33m, [m[1;32mselect2_added[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Mar 21 20:26:33 2021 +0545
+
+    select2 added and query optimized
+
+[33mcommit d466358a3b97afa9233cf6f3744cb1416a126e37[m
+Merge: a7b6d5d 94f3257
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Mar 21 20:25:00 2021 +0545
+
+    Merge branch 'master' of https://github.com/shahmanish877/webbus
+
+[33mcommit 94f3257887be5f4212bdcf274603fe24703446c8[m
+Merge: 8138de6 031d4e7
+Author: Manish Shah <66003695+shahmanish877@users.noreply.github.com>
+Date:   Sun Mar 21 20:24:02 2021 +0545
+
+    Merge pull request #5 from shahmanish877/select2_added
+    
+    select2 added and query optimized
+
+[33mcommit 031d4e74718113945b960e96b6307f17aef26659[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Mar 21 20:22:58 2021 +0545
+
+    select2 added and query optimized
+
+[33mcommit a7b6d5d1f4b5976c8f837f61631b477b8f0a2791[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Mar 21 20:21:28 2021 +0545
+
+    select2 added and query optimized
+
+[33mcommit 8138de64c2fa920f2351a17662473f2f6ed4187d[m
+Merge: 995f6d5 d45738c
+Author: Manish Shah <66003695+shahmanish877@users.noreply.github.com>
+Date:   Sun Mar 21 20:19:36 2021 +0545
+
+    Merge pull request #4 from shahmanish877/select2_added
+    
+    select2 added and query optimized
+
+[33mcommit d45738cd086502003027ee2a9b784ddae646cc18[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Mar 21 20:18:21 2021 +0545
+
+    select2 added and query optimized
+
+[33mcommit 995f6d5f7b9c64cbb3278a2c7dd4d6a8b817e064[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Mar 21 20:07:02 2021 +0545
+
+    select2 added and query optimized
+
+[33mcommit 56d4ecad5c7741e51d073c0260305a3517b7b1a3[m
+Merge: 8c9afdc 7c66365
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Mar 19 13:31:53 2021 +0545
+
+    Merge branch 'master' of https://github.com/shahmanish877/webbus
+
+[33mcommit 8c9afdc44c86c0b2581f1a0f2c1457e51b265f20[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Mar 19 13:30:59 2021 +0545
+
+    Updated
+
+[33mcommit 7c66365fe68feb5f5d3c3c85db233942ea169f6b[m
+Merge: e0937e8 75abc06
+Author: Manish Shah <66003695+shahmanish877@users.noreply.github.com>
+Date:   Sun Feb 14 16:01:55 2021 +0545
+
+    Merge pull request #3 from shahmanish877/Available_bus_layout_update
+    
+    Available_bus_layout_update
+
+[33mcommit 75abc0673c2ff178ebff6b8acc1db5d8e494867b[m[33m ([m[1;31morigin/Available_bus_layout_update[m[33m, [m[1;32mAvailable_bus_layout_update[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Feb 14 15:55:45 2021 +0545
+
+    Available_bus_layout_update
+
+[33mcommit e0937e826b564f4bbccb546baba1a1220cf53a80[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Feb 14 14:48:12 2021 +0545
+
+    Login bg optimized
+
+[33mcommit 061bad58238c62679e97063b7dfce120a4b7e411[m
+Merge: f0059db 70dfede
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Feb 14 14:40:56 2021 +0545
+
+    Merge branch 'master' of https://github.com/shahmanish877/webbus
+
+[33mcommit f0059db4abbf5c33dcbf97bd7e0058b1619ca730[m[33m ([m[1;31morigin/Banner_update[m[33m, [m[1;32mBanner_update[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Feb 14 14:35:59 2021 +0545
+
+    Updated banner
+
+[33mcommit 70dfede11de2f50de0b6dbed317af8d7f5432d1c[m
+Merge: e9be356 f7e1dca
+Author: Manish Shah <66003695+shahmanish877@users.noreply.github.com>
+Date:   Sat Feb 13 18:00:36 2021 +0545
+
+    Merge pull request #2 from shahmanish877/Logo_Updated
+    
+    Logo updated and name changed
+
+[33mcommit f7e1dcafa25e8e1a083113d10ea4a5b82a77b85a[m[33m ([m[1;31morigin/Logo_Updated[m[33m, [m[1;32mLogo_Updated[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sat Feb 13 17:54:38 2021 +0545
+
+    Logo updated and name changed
+
+[33mcommit e9be356b57ff46eed8ceb672416de4a70e1d1aa7[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Jan 22 14:42:00 2021 +0545
+
+    Login with username
+
+[33mcommit d6919045869e3bf4380e9ececd56a863a43e0de0[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Jan 22 14:20:07 2021 +0545
+
+    Remove vendor folder
+
+[33mcommit f5a8a2a2f5351953d12317d49e22397fb7bd25a0[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Jan 22 14:18:41 2021 +0545
+
+    Added vendor folder
+
+[33mcommit ec400df27836273bab39deb15047c200cc9187c9[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Fri Jan 22 14:01:46 2021 +0545
+
+    pgsql to mysql
+
+[33mcommit a19f4abffc6dad93c2e7f50dffd05d9ce4e2ef75[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Wed Jan 20 18:29:15 2021 +0545
+
+    Update database connection
+
+[33mcommit 6db37548c58120300b0721156ef9951e40e1ca1d[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Wed Jan 20 18:19:00 2021 +0545
+
+    New login url updated again
+
+[33mcommit a0ea7a430a3d3b273da7e068a9ec1e5c1aeedac3[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Wed Jan 20 18:07:05 2021 +0545
+
+    Heroku install
+
+[33mcommit 9724b11c9c70eb301a60c9cfc479ff85b0723ec9[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Wed Jan 20 18:00:40 2021 +0545
+
+    Updating
+
+[33mcommit 04c91e1abd12151bb88f311c696d2d89ff506fd0[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun Jun 14 17:23:42 2020 +0545
+
+    Offday bug solved
+
+[33mcommit b8cc71ece26c842590902a451e74a44cca6d30b2[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Sun May 31 11:48:01 2020 +0545
+
+    Bus off day optimized and new-login form route added
+
+[33mcommit 8aa88ccf472b522360b43dea962a15d950a907d0[m[33m ([m[1;31morigin/try[m[33m, [m[1;32mtry[m[33m)[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Thu May 28 12:11:26 2020 +0545
+
+    Reuploading
+
+[33mcommit adda9839b0fb3de99d38b93f46cddc1fd3cebc6a[m
+Author: Manish Shah <shahmanish877@gmail.com>
+Date:   Thu May 28 12:01:43 2020 +0545
+
+    first commit
