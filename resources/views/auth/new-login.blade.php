@@ -9,6 +9,9 @@
 
 
 <div aria-live="polite" aria-atomic="true" >
+    <div class="text-white" style="position: absolute; top: 25px; left: 25px;">
+        <a href="{{ url('/') }}" class="text-white text-decoration-none"> &#x2190; Click here to go back to home!! </a>
+    </div>
   <!-- Position it -->
   <div style="position: absolute; top: 0; right: 0;" >
 
@@ -55,8 +58,9 @@
 
 	<div class="login-body">
 		<div class="logo">
-			<img src="{{ asset('/assets/images/logo.png') }}" alt="Web Bus Login" title="Web Bus Logo" width="100px" class="pt-3">
-
+            <a href="{{ url('/') }}">
+                <img src="{{ asset('/assets/images/logo.png') }}" alt="Web Bus Login" title="Web Bus Logo" width="100px" class="pt-3">
+            </a>
 
                 <div class="card-body">
 					<form method="POST"  action="{{ route('login') }}">
@@ -115,7 +119,9 @@
 				</div>
 
 			</div>
+
 		</div>
+
 	</div>
 
 
