@@ -19,9 +19,6 @@ Route::get('/', function () {
 
 });
 
-Route::any('{query}',
-    function() { return redirect('/'); })
-    ->where('query', '.*');
 
 
 // Route::get('/new-login', function () {
