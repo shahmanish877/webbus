@@ -1,3 +1,24 @@
+<p align="center">  <a href="http://yatri-bus.herokuapp.com/"> <img src="http://yatri-bus.herokuapp.com/assets/images/logo.png" width="120"> </a> </p>
+
+<strong> About <a href="http://yatri-bus.herokuapp.com/"> WebBus </a> </strong> 
+
+This is a project about Online Bus Ticket Booking System with Laravel. The user/customer can register an account for free. The customers can search for the bus by searching it with the location and the date of travel and the customers can select the bus and then seat and proceed for the payment. 
+
+Any users/customers can be admin by requesting the Owner of the site so that the admin can "Add Bus". 
+
+The admin when adding any bus will need to be approved by the owner of the site by verifying it. The admin can add Holiday for the specific bus when the need for example when the bus is reserved.
+
+The admin or the customer can see their transaction. Customers can request to cancel the ticket before the travel date and the admin can review and then either accept the request to cancel or reject it. If accepted refund will be proceeded by the admin.
+
+
+To login as admin - 
+user: admin
+password: admin
+
+To login as a customer - 
+user: customer
+password: customer
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
