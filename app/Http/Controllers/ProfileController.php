@@ -106,6 +106,7 @@ class ProfileController extends Controller
         ]);
 
         $user->email_verified_at = NULL;
+        $user->sendEmailVerificationNotification();
         $user->update($data);
 
         return redirect('profile')->with('success_msg','Email successfully updated');
