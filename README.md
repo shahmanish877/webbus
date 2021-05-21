@@ -2,6 +2,8 @@
 
 <strong> About <a href="http://yatri-bus.herokuapp.com/"> WebBus </a> </strong> 
 
+## About Laravel
+
 This is a project about Online Bus Ticket Booking System with Laravel. The user/customer can register an account for free. The customers can search for the bus by searching it with the location and the date of travel and the customers can select the bus and then seat and proceed for the payment. 
 
 Any users/customers can be admin by requesting the Owner of the site so that the admin can "Add Bus". 
