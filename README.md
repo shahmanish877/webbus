@@ -1,4 +1,4 @@
-<p align="center">  <a href="http://yatri-bus.herokuapp.com/"> <img src="http://yatri-bus.herokuapp.com/assets/images/logo.png" width="120"> </a> </p>
+<p align="center">  <a href="http://yatri-bus.herokuapp.com/"> <img src="https://github.com/shahmanish877/webbus/blob/master/public/assets/images/logo.png" width="120"> </a> </p>
 
 <strong> About <a href="http://yatri-bus.herokuapp.com/"> WebBus </a> </strong> 
 
