@@ -10,7 +10,7 @@ The admin when adding any bus will need to be approved by the owner of the site 
 
 The admin or the customer can see their transaction. Customers can request to cancel the ticket before the travel date and the admin can review and then either accept the request to cancel or reject it. If accepted refund will be proceeded by the admin.
 
-
+Demo - http://yatri-bus.herokuapp.com/
 To login as admin - 
 user: admin
 password: admin
