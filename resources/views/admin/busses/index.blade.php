@@ -30,7 +30,8 @@
 
 			    <tr>
 			      <th scope="row"> {{$bus->id}} </th>
-			      <td> <a href="{{url('admin/busses/'.Crypt::encrypt($bus->id))}}" class="text-info font-weight-bold">{{$bus->name}}</a>  </td>
+{{--			      <td> <a href="{{url('admin/busses/'.Crypt::encrypt($bus->id))}}" class="text-info font-weight-bold">{{$bus->name}}</a>  </td>--}}
+			      <td> <a href="{{url('admin/busses/'.$bus->id)}}" class="text-info font-weight-bold">{{$bus->name}}</a>  </td>
 			      <td> {{$bus->reg_num}} </td>
 			      <td> {{$bus->from_location}} </td>
 			      <td> {{$bus->to_location}} </td>

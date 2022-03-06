@@ -98,14 +98,14 @@ class BusController extends Controller
     public function show($bus)
     {
         //First way to get a row from sql
-
-        try {
-            $bus_id = Crypt::decrypt($bus);
-        } catch (DecryptException $e) {
-            return abort(404);
-        }
-
-        $bus = Bus::findOrFail($bus_id);
+//
+//        try {
+//            $bus = Crypt::decrypt($bus);
+//        } catch (DecryptException $e) {
+//            return abort(404);
+//        }
+//
+        $bus = Bus::findOrFail($bus);
         //dd($bus);
         if(Auth::id()==$bus->user_id)
            return view('admin.busses.show',compact('bus'));
@@ -122,7 +122,6 @@ class BusController extends Controller
      */
     public function edit(Bus $bus)
     {
-        //Second way to get a row from sql
         return view('admin.busses.edit',compact('bus'));
 
     }
@@ -136,6 +135,7 @@ class BusController extends Controller
      */
     public function update(Request $request, Bus $bus)
     {
+
         $data = request()->validate([
             'name' => 'required',
             'reg_num' => 'required|unique:buses,reg_num,'.$bus->id,

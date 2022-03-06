@@ -15,10 +15,10 @@
 		<a href="{{ url('superadmin/busses') }}" class="btn btn-warning">Back</a>
 
 	<div class="row">
-		
+
 
 		<div class="col-sm-8">
-		
+
 			<table class="table mt-5">
 			  <thead class="thead-light">
 			    <tr>
@@ -56,22 +56,22 @@
 			    <tr>
 			      <th scope="col">Off Day</th>
 			      <td>{{$bus->off_day}}</td>
-			    </tr> 
+			    </tr>
 			    <tr>
 			      <th scope="col">Description</th>
 			      <td>{{$bus->description}}</td>
 			    </tr>
-			    
+
 			  </thead>
-			  
-			   
+
+
 			</table>
 		</div>
 
 		<div class="col-sm-4 mt-5">
 			<h5>Price: <span class="text-success  mt-5">Rs.{{ $bus->price }} </span> </h5>
 
-		
+
 			<form action="" method="POST" onsubmit="return confirm('Are you sure you want to approve it?');" class="float-left">
 
 		  	 <!-- or blank action as it is the same page -->
@@ -79,20 +79,20 @@
 				@method('PATCH')
 				<button class="btn btn-success">Approve</button>
 			</form>
-		
-			
+
+
 
 		  <form action="{{ url('superadmin/busses') }}/{{$bus->id}}" method="POST" onsubmit="return confirm('Are you sure you want to reject it?');">
 
 		  	 <!-- or blank action as it is the same page -->
-				@method('PATCH')
+				@method('DELETE')
 				@csrf
 				<button class="btn btn-danger">Reject</button>
 			</form>
-			
 
-			<p class="mt-3 text-capitalize">Status: 
-				
+
+			<p class="mt-3 text-capitalize">Status:
+
 				@include('layouts.bus_status')
 			</p>
 
